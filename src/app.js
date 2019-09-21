@@ -9,7 +9,7 @@ import getVisibleExpenses from './selectors/expenses'
 import 'normalize.css/normalize.css'
 import './styles/styles.scss'
 
-//dari ./store/configurestore.js - menampilkan reducer expenses dan filter
+//dari ./store/configurestore.js - menampilkan reducer expenses dan filter alaaah
 const store = configureStore()
 
 
