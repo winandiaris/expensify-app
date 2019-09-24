@@ -1,13 +1,15 @@
 {
   "dependencies": {
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
+    "babel-core": "7.0.0-bridge.0",
     "babel-loader": "7.1.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^3.2.0",
+    "jest": "^24.9.0",
     "live-server": "^1.2.1",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
@@ -26,6 +28,7 @@
     "uuid": "^3.3.3",
     "validator": "^11.1.0",
     "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.0"
   },
   "name": "Expensify",
@@ -36,9 +39,10 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "test": "jest"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.6"
+    "babel-jest": "^24.9.0"
   }
 }
