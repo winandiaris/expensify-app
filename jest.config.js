@@ -185,4 +185,6 @@ module.exports = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
+
+  //transformIgnorePatterns: ['./node_modules/']
 };

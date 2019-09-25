@@ -31,7 +31,7 @@
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.0"
   },
-  "name": "Expensify",
+  "name": "expensify",
   "version": "1.0.0",
   "main": "index.js",
   "author": "aris winandi",
