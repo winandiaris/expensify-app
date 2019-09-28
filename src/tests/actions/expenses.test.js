@@ -1,5 +1,6 @@
+
 import {addExpense, editExpense, removeExpense} from '../../actions/expenses'
-import { testNameToKey } from 'jest-snapshot/build/utils';
+
 
 test('should setup remove expense action object',()=>{
     //buat variabel 'action' dengan nilai method removeExpense(), dan argument id dengan nilai 123abc
