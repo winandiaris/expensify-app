@@ -5,14 +5,14 @@ import selectExpenses from '../selectors/expenses'
 
 //bentuk props
 //komponen ini yang di tampilkan/dipanggil oleh ExpenseDashboard, oleh karena itu bentuknya props
-const ExpenseList = (props) => (
+export const ExpenseList = (props) => (
     <div>
         <h1>Expense List</h1>
         {/* Mengambil data -expenses, filters- dari bawah (mapStateProps) */}
         {props.expenses.map((expense) =>{// expenses = state awal, expense = nama objek yang menunjukan per individu
             return <ExpenseListItem key={expense.id} {...expense}/>
         })}
-        {props.filters.text}
+        {/* {props.filters.text} */}
     </div>
 )
 

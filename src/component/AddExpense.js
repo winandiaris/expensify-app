@@ -8,13 +8,19 @@ const AddExpensePage = (props)=> (
         <h1>Add Expense</h1>
         <ExpenseForm //memanggil komponen form
         onSubmit={(expense)=>{
-            props.dispatch(addExpense(expense)) //dispatch berdasarkan data input dan mengembalikan ke seluruh state expense
+            //dimatikan karena -addExpense(expense)- tidak ramah testing, penggantinya adalah props.onSubmit dibawah
+            // props.dispatch(addExpense(expense)) //dispatch berdasarkan data input dan mengembalikan ke seluruh state expense
+            
+            props.onSubmit(expense)
             props.history.push('/') //setelah submit, redirect ke halaman depan
         }
-
-        }
+    }
         />
     </div>
 )
+//Demi test - pembuatan mapDispatchToProps untuk menjembatani onSubmit dengan proses dispatch
+const mapDispatchToProps = (dispatch)=>({
+    onSubmit: (expense) => dispatch(addExpense(expense))
+})
 
-export default connect()(AddExpensePage)
+export default connect(undefined, mapDispatchToProps )(AddExpensePage)

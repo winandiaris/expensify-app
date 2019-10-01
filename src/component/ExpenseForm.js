@@ -1,8 +1,8 @@
 import React from 'react'
 import moment from 'moment'
 import {SingleDatePicker} from 'react-dates'
-import 'react-dates/lib/css/_datepicker.css'
-import 'react-dates/initialize'
+// import 'react-dates/lib/css/_datepicker.css'//dipindah ke app.js saat testing
+// import 'react-dates/initialize'
 
 const now = moment()
 console.log(now.format('MMM Do, YYYY'))
@@ -46,7 +46,7 @@ export default class ExpenseForm extends React.Component {
         this.setState(()=>({calendarFocused: focused}))
     }
     onSubmit = (e)=>{
-        e.preventDefault()//mematikan fungsi bawaan
+        e.preventDefault()//mematikan fungsi bawaan, refresh otomatis
     
         if(!this.state.description || !this.state.amount){//cek jika desc / amount kosong
             this.setState(()=>({error:'ini ada masalah'}))
