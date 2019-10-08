@@ -14,7 +14,7 @@ module.exports = (env) => {
         entry : path.resolve(__dirname, './src/app.js') ,// path direktori file/script utama 
         //entry : './public/src/app.js',
         output : {
-            path : path.join(__dirname, 'public'), // path direktori output file webpack
+            path : path.join(__dirname, './public/dist'), // path direktori output file webpack
             
             filename : "bundle.js", //nama file webpack
             //publicPath: '/public/'
@@ -32,7 +32,8 @@ module.exports = (env) => {
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            hmr: process.env.NODE_ENV === 'development',
+                            hmr: process.env.NODE_ENV === 'development'
+                            // hmr: process.env.NODE_ENV === 'production'
                           },
 
                         //   loader: 'css-loader',
@@ -93,9 +94,10 @@ module.exports = (env) => {
         devtool : isProduction ? 'source-map' : 'cheap-module-eval-source-map', //diganti dibawah, katanya banyak bug
         // devtool : isProduction ? 'source-map' : 'inline-source-map',
         devServer : {
-            
             contentBase : './public',
-            historyApiFallback: true
+            historyApiFallback: true,
+            // publicPath: path.join(__dirname, './public/dist')
+            publicPath: './dist/'
     
         }
     }
