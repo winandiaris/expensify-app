@@ -14,7 +14,7 @@ module.exports = (env) => {
         entry : path.resolve(__dirname, './src/app.js') ,// path direktori file/script utama 
         //entry : './public/src/app.js',
         output : {
-            path : path.join(__dirname, './public/dist'), // path direktori output file webpack
+            path : path.join(__dirname, 'public'), // path direktori output file webpack
             
             filename : "bundle.js", //nama file webpack
             //publicPath: '/public/'
@@ -97,7 +97,7 @@ module.exports = (env) => {
             contentBase : './public',
             historyApiFallback: true,
             // publicPath: path.join(__dirname, './public/dist')
-            publicPath: './dist/'
+            // publicPath: './dist/'
     
         }
     }
