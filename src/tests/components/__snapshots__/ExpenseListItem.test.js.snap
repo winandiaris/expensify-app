@@ -10,9 +10,9 @@ exports[`Harus bisa merender ExpenseListItem menggunakan data dummy dari fixture
     </h1>
   </Link>
   <p>
-    195
-     - 
-    0
+    $1.95
+    -
+    January 1st, 1970
   </p>
 </div>
 `;

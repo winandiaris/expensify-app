@@ -7,7 +7,8 @@ import {addExpense} from './actions/expenses'
 import {setTextFilter} from './actions/filters'
 import getVisibleExpenses from './selectors/expenses'
 import 'react-dates/lib/css/_datepicker.css'
-// import 'normalize.css/normalize.css'
+import 'react-dates/initialize'
+import 'normalize.css/normalize.css'
 import './styles/styles.scss'
 
 //dari ./store/configurestore.js - menampilkan reducer expenses dan filter alaaah
