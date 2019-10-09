@@ -14,7 +14,7 @@ exports[`Harus bisa merender ExpenseList menggunakan data dari fixtures/expenses
     note=""
   />
   <ExpenseListItem
-    amount={1955000}
+    amount={109500}
     createdAt={-345600000}
     description="rent"
     id="2"

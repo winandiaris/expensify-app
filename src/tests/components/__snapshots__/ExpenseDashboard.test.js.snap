@@ -4,5 +4,6 @@ exports[`Harus bisa merender ExpenseDashboardPage menggunakan data dari fixtures
 <div>
   <React.Memo />
   <React.Memo />
+  <React.Memo />
 </div>
 `;

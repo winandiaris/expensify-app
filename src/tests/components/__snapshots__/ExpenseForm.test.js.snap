@@ -137,7 +137,7 @@ exports[`Harus Bisa merender Form dengan menggunakan data dummy 1`] = `
       onChange={[Function]}
       placeholder="amount"
       type="text"
-      value="19550"
+      value="1095"
     />
     <withStyles(SingleDatePicker)
       anchorDirection="left"

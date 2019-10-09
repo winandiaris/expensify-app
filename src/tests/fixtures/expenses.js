@@ -11,7 +11,7 @@ export default [{
     id:'2',
     description: 'rent',
     note:'',
-    amount: 1955000,
+    amount: 109500,
     createdAt:moment(0).subtract(4, 'days').valueOf() //4 hari kebelakang
 },
 {
