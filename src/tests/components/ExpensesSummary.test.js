@@ -1,6 +1,6 @@
 import React from 'react'
 import {shallow} from 'enzyme'
-import ExpensesSummary from '../../component/ExpensesSummary'
+import {ExpensesSummary} from '../../component/ExpensesSummary'
 
 
 

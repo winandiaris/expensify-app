@@ -10,6 +10,8 @@ import 'react-dates/lib/css/_datepicker.css'
 import 'react-dates/initialize'
 import 'normalize.css/normalize.css'
 import './styles/styles.scss'
+import './firebase/firebase'
+// import './playground/promises'
 
 //dari ./store/configurestore.js - menampilkan reducer expenses dan filter alaaah
 const store = configureStore()

@@ -3,25 +3,25 @@
 exports[`harus bisa merender ExpensesSummary dengan data 1 expense 1`] = `
 <div>
   <h1>
+    Viewing 
     1
      
     expense
      totalling 
     $2.35
   </h1>
-  viewing
 </div>
 `;
 
 exports[`harus bisa merender ExpensesSummary dengan data multiple expense 1`] = `
 <div>
   <h1>
+    Viewing 
     23
      
     expenses
      totalling 
     $235,123,409.87
   </h1>
-  viewing
 </div>
 `;
