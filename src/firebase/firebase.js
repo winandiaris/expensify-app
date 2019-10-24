@@ -9,16 +9,27 @@ const firebaseConfig = {
     authDomain: "expensify2-b03c0.firebaseapp.com",
     databaseURL: "https://expensify2-b03c0.firebaseio.com",
     projectId: "expensify2-b03c0",
-    storageBucket: "",
+    storageBucket: "expensify2-b03c0.appspot.com",
     messagingSenderId: "377423434620",
     appId: "1:377423434620:web:c9f383fd9280caa588caf9",
     measurementId: "G-N1L6V6GK27"
+
+  //   apiKey: process.env.FIREBASE_API_KEY,
+  //   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  //   databaseURL: process.env.FIREBASE_DATABASE_URL,
+  //   projectId: process.env.FIREBASE_PROJECT_ID,
+  //   storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  //   messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  //   appId: process.env.FIREBASE_APP_ID,
+  //   measurementId: process.env.FIREBASE_MEASUREMENT_ID
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  // firebase.analytics();
 
   const database = firebase.database()
+
+  export {firebase, database as default}
 
 //   database.ref().set({ //ref sebagai root/nama database, set untuk write kedalam ref()
 //       name: 'aris_win',
@@ -115,13 +126,13 @@ const firebaseConfig = {
 //   amount: 75677,
 //   createdAt: 75675675677
 // })
-database.ref('expenses').push({
-  description: 'bracket',
-  note: 'ggsdfgfs',
-  amount: 4674,
-  createdAt: 468456746
-})
-// database.ref().remove()
+// database.ref('expenses').push({
+//   description: 'bracket',
+//   note: 'ggsdfgfs',
+//   amount: 4674,
+//   createdAt: 468456746
+// })
+// // database.ref().remove()
 
 // database.ref('expenses') // mengambil root expenses
 // .once('value') //mengambil value firebase (jika ingin realtime/watch, gunakan .on())
@@ -150,10 +161,10 @@ database.ref('expenses').push({
 //   console.log(snapshot.key, snapshot.val())
 // })
 
-//child_added
-database.ref('expenses').on('child_added', (snapshot)=>{
-  console.log(snapshot.key, snapshot.val())
-})
+// //child_added
+// database.ref('expenses').on('child_added', (snapshot)=>{
+//   console.log(snapshot.key, snapshot.val())
+// })
 
 
 
